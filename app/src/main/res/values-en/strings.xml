@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Quiz</string>
 
+    <string name ="ingreso">Enter your name</string>
 
+    <string name="boton">Following</string>
 
 
 
