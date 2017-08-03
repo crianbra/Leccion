@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -21,6 +22,67 @@ public class Main2Activity extends AppCompatActivity {
 
         TextView user= (TextView)(findViewById(R.id.txt_user));
         user.setText((String)getIntent().getExtras().get("usuario"));
+
+
+        final Button button1= (Button) findViewById(R.id.btn_1);
+        mp1 = MediaPlayer.create(this, R.raw.sonido1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp1.start();
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(),"Numero 1",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        final Button button2= (Button) findViewById(R.id.btn_2);
+        mp2 = MediaPlayer.create(this, R.raw.sonido2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp2.start();
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(),"Numero 2",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        final Button button3= (Button) findViewById(R.id.btn_3);
+        mp3 = MediaPlayer.create(this, R.raw.sonido3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp3.start();
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(),"Numero 3",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        final Button button4= (Button) findViewById(R.id.btn_4);
+        mp2 = MediaPlayer.create(this, R.raw.sonido2);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp2.start();
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(),"Numero 4",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        final Button button5= (Button) findViewById(R.id.btn_5);
+        mp2 = MediaPlayer.create(this, R.raw.sonido2);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp2.start();
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(),"Numero 5",Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
 
         final Button buttonSiguiente= (Button) findViewById(R.id.btn_siguiente);
