@@ -11,5 +11,10 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        TextView user1= (TextView)(findViewById(R.id.txt_user2));
+        user1.setText((String)getIntent().getExtras().get("usuario"));
+
+        TextView user2= (TextView)(findViewById(R.id.txt_aciertos_2));
+        user2.setText((String)getIntent().getExtras().get("2"));
     }
 }

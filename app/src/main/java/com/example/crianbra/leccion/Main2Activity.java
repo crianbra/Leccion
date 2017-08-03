@@ -14,6 +14,7 @@ public class Main2Activity extends AppCompatActivity {
 
     String tag = "Lifecycle";
     MediaPlayer mp1, mp2,mp3;
+    int valor = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,12 +87,21 @@ public class Main2Activity extends AppCompatActivity {
 
 
         final Button buttonSiguiente= (Button) findViewById(R.id.btn_siguiente);
+
+
         buttonSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
+
                 Intent intentSiguiente = new Intent(Main2Activity.this, Main3Activity.class);
+                TextView u = (TextView) (findViewById(R.id.txt_user));
+                TextView u1 = (TextView) (findViewById(R.id.txt_hola));
+                String data [] = new String [2];
+                intentSiguiente.putExtra("usuario", ""+u.getText());
+                intentSiguiente.putExtra("2", "2");
                 startActivity(intentSiguiente);
+
             }
         });
     }
