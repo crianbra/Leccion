@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.crianbra.leccion.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su nombre"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="?android:attr/expandableListPreferredChildPaddingLeft"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="126dp"
+            android:layout_above="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="201dp"
+            android:layout_above="@+id/btn_ingresar"
+            android:layout_alignLeft="@+id/btn_ingresar"
+            android:layout_alignStart="@+id/btn_ingresar"
+            android:layout_marginBottom="46dp" />
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:text="Ingresar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="270dp"
+            android:layout_marginBottom="102dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
